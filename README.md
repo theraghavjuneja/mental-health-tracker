@@ -14,9 +14,11 @@ Welcome to the Mental Wellness AI project! This application helps users track th
 ## Getting Started
 
 The video of project can be found here
-Video demonstrating feature 1
+Video demonstrating feature 1 (personalized attention, meditation test, song recommendation)
 https://drive.google.com/file/d/1WAtuhw74RJors6wxHgsHM46X_viPlBmj/view?usp=sharing
-Video demonstrating feature 2
+Video demonstrating feature 2(podcast recommendation, online links etc.)
+https://drive.google.com/file/d/1_Oytw2IRXSJ_2nqSOuG1VGUnbtbySOaz/view?usp=sharing
+Video demonstrating depression Test
 
 
 

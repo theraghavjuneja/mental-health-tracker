@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import uuid  
 from text import return_top_message_text
-from backend.app import give_output
+from backend.app import give_output,suggest_songs,suggest_podcast
 
 st.header("Mental Health Chatbot")
 
@@ -56,7 +56,6 @@ def return_message(session_id, message):
     response = give_output(sessionId=session_id, human_message=message)
     return response
 
-# Display content in a new "window" (simulated in main area of the app)
 def show_new_window(title, content):
     st.session_state["window_title"] = title
     st.session_state["window_content"] = content
@@ -66,6 +65,14 @@ def render_new_window():
         st.subheader(st.session_state["window_title"])
         st.write(st.session_state["window_content"])
 
+
+
+# Convert chat history to a single string
+def get_conversation_as_string():
+    conversation = st.session_state[MESSAGES]
+    conversation_str = "\n".join([f"{msg['actor']}: {msg['payload']}" for msg in conversation])
+    return conversation_str
+
 # Sidebar buttons with actions
 def sidebar_buttons():
     with st.sidebar:
@@ -73,10 +80,15 @@ def sidebar_buttons():
         st.subheader("Resources")
         
         if st.button("🎵 Suggest me some songs"):
-            show_new_window("Song Suggestions", "Here are some songs to help you relax:\n- Song 1\n- Song 2\n- Song 3")
+           
+            conversation_str = get_conversation_as_string()
+            song_suggestions = suggest_songs(conversation_str)  
+            show_new_window("Song Suggestions", song_suggestions)  
         
         if st.button("🎙️ Suggest some podcasts"):
-            show_new_window("Podcast Suggestions", "Here are some podcasts that might help you with your mental health:\n- Podcast 1\n- Podcast 2\n- Podcast 3")
+            conversation_str=get_conversation_as_string()
+            podcast_suggestion=suggest_podcast(conversation_str)
+            show_new_window("Podcast suggestions",podcast_suggestion)
         
         if st.button("🧑‍⚕️ Find therapists near me"):
             show_new_window("Find Therapists", "Here are some resources to find therapists near you:\n- Resource 1\n- Resource 2\n- Resource 3")

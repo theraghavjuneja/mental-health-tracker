@@ -25,7 +25,7 @@ prompt=ChatPromptTemplate.from_messages(
 )
 
 template2="""
-You are given the conversation of a user and a Mental Health AI,
+You are given the conversation of a user and a Mental Wellness AI,
 Based on this conversation you should suggest some songs to users with a brief reason of why he should listen that song
 As an output, only give me song and reason nothing else.
 If you can't find a conversation please leave a message saying "Sorry, you must do a conversation before clicking on Suggest Songs button"
@@ -34,5 +34,17 @@ If you can't find a conversation please leave a message saying "Sorry, you must 
 SongGenerationPromptTemplate=PromptTemplate(
     input_variables=['user_chat'],
     template=template2
+)
+
+template3="""
+You are given the conversation of a user and a Mental Wellness AI,
+Based on this conversation you should suggest some podcasts to users with a brief reason of why he should listen that song
+As an output, only give me song and reason nothing else.
+If you can't find a conversation please leave a message saying "Sorry, you must do a conversation before clicking on Suggest Podcast button"
+{user_chat}
+"""
+PodcastGenerationPromptTemplate=PromptTemplate(
+    input_variables=['user_chat'],
+    template=template3
 # currentl parital not needed
 )

@@ -61,7 +61,30 @@ def give_output(sessionId:str,human_message):
     return response.content
 
 def suggest_songs(conversation):
-    output = SongGenerationPromptTemplate.invoke(user_chat=conversation)
-    return output.content
     
+    messages = [
+        (
+            "system",
+            """You are given the conversation of a user and a Mental Wellness AI,
+Based on this conversation you should suggest some songs to users with a brief reason of why he should listen that song
+As an output, only give me song and reason nothing else.
+If you can't find a conversation please leave a message saying "Sorry, you must do a conversation before clicking on Suggest Songs button.""",
+        ),
+        ("human", conversation),
+    ]
+    result=llm.invoke(messages)
+    return result.content
 
+def suggest_podcast(conversation):
+    messages = [
+    (
+        "system",
+        """You are given the conversation of a user and a Mental Wellness AI,
+    Based on this conversation you should suggest some podcasts to users with a brief reason of why he should listen that song
+    As an output, only give me song and reason nothing else.
+    If you can't find a conversation please leave a message saying "Sorry, you must do a conversation before clicking on Suggest Podcast button.""",
+    ),
+    ("human", conversation),
+    ]
+    result=llm.invoke(messages)
+    return result.content

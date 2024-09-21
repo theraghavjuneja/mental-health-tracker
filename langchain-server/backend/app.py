@@ -88,3 +88,17 @@ def suggest_podcast(conversation):
     ]
     result=llm.invoke(messages)
     return result.content
+
+def suggest_online_resources(conversation):
+    messages = [
+    (
+        "system",
+        """You are given the conversation of a user and a Mental Wellness AI,
+    Based on this conversation you should suggest some online resources like books, websites to users with a brief reason of why he should refer there
+    As an output, only give me those online resources and reason nothing else.
+    If you can't find a conversation please leave a message saying "Sorry, you must do a conversation before clicking on Suggest Podcast button.""",
+    ),
+    ("human", conversation),
+    ]
+    result=llm.invoke(messages)
+    return result.content

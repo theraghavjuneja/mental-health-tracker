@@ -2,7 +2,7 @@ import streamlit as st
 import os
 import uuid  
 from text import return_top_message_text
-from backend.app import give_output,suggest_songs,suggest_podcast
+from backend.app import give_output,suggest_songs,suggest_podcast,suggest_online_resources
 
 st.header("Mental Health Chatbot")
 
@@ -91,10 +91,12 @@ def sidebar_buttons():
             show_new_window("Podcast suggestions",podcast_suggestion)
         
         if st.button("🧑‍⚕️ Find therapists near me"):
-            show_new_window("Find Therapists", "Here are some resources to find therapists near you:\n- Resource 1\n- Resource 2\n- Resource 3")
+            show_new_window("Find Therapists", "Here are some resources to find therapists near you:\n- https://www.psychologytoday.com/us/therapists\n-  https://indianpsychiatricsociety.org/\n")
         
         if st.button("🌐 Suggest online resources"):
-            show_new_window("Online Resources", "Here are some useful online mental health resources:\n- Resource 1\n- Resource 2\n- Resource 3")
+            conversation_str=get_conversation_as_string()
+            online_suggestion=suggest_online_resources(conversation_str)
+            show_new_window("Podcast suggestions",online_suggestion)
         
         if st.button("📝 Take Depression Test"):
             show_new_window("Depression Test", "You can take a self-assessment depression test here:\n- Test 1\n- Test 2")

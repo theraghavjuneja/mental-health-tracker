@@ -1,13 +1,13 @@
 # Mental Wellness AI
 The video of project can be found here
-Video demonstrating feature 1 (personalized attention, meditation test, song recommendation)  
+# Video demonstrating feature 1 (personalized attention, meditation test, song recommendation)  
 https://drive.google.com/file/d/1WAtuhw74RJors6wxHgsHM46X_viPlBmj/view?usp=sharing  
-Video demonstrating feature 2(podcast recommendation, online links etc.)  
+# Video demonstrating feature 2(podcast recommendation, online links etc.)  
 https://drive.google.com/file/d/1_Oytw2IRXSJ_2nqSOuG1VGUnbtbySOaz/view?usp=sharing  
-Video demonstrating depression Test  
+# Video demonstrating depression Test  
 https://drive.google.com/file/d/1GoxsMVHiz2bgIxs_HZDgmwcYrVMGWG91/view?usp=sharing  
 
-PPT WITH FLOW CHART IS GIVEN HERE
+## PPT WITH FLOW CHART IS GIVEN HERE
 https://www.canva.com/design/DAGC9YnlASo/QWi0VxWdYJhpKrcRQUKs2w/edit?utm_content=DAGC9YnlASo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 

@@ -35,7 +35,7 @@ Welcome to the Mental Wellness AI project! This application helps users track th
 ![Image 4 podcast suggestion](https://github.com/theraghavjuneja/mental-health-tracker/blob/master/Screenshot%202024-09-21%20105724.png)
 ![Image5](https://github.com/theraghavjuneja/mental-health-tracker/blob/master/Screenshot%202024-09-21%20105724.png)
 
-
+![Image6](https://github.com/theraghavjuneja/mental-health-tracker/blob/master/Screenshot%202024-09-21%20105756.png)
 
 ### Installation
 

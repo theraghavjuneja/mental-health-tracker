@@ -23,6 +23,7 @@ https://drive.google.com/file/d/1GoxsMVHiz2bgIxs_HZDgmwcYrVMGWG91/view?usp=shari
 
 ### Image of Depression Test Results
 
+![DepressionTestResult](https://github.com/theraghavjuneja/mental-health-tracker/blob/master/Screenshot%202024-09-21%20105055.png)
 
 
 

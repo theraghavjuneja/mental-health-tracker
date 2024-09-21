@@ -13,6 +13,11 @@ Welcome to the Mental Wellness AI project! This application helps users track th
 
 ## Getting Started
 
+The video of project can be found here
+Video demonstrating feature 1
+https://drive.google.com/file/d/1WAtuhw74RJors6wxHgsHM46X_viPlBmj/view?usp=sharing
+Video demonstrating feature 2
+
 
 
 ### Installation

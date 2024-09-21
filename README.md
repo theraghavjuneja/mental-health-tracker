@@ -1,11 +1,16 @@
 # Mental Wellness AI
 The video of project can be found here
-Video demonstrating feature 1 (personalized attention, meditation test, song recommendation)
-https://drive.google.com/file/d/1WAtuhw74RJors6wxHgsHM46X_viPlBmj/view?usp=sharing
-Video demonstrating feature 2(podcast recommendation, online links etc.)
-https://drive.google.com/file/d/1_Oytw2IRXSJ_2nqSOuG1VGUnbtbySOaz/view?usp=sharing
-Video demonstrating depression Test
-https://drive.google.com/file/d/1GoxsMVHiz2bgIxs_HZDgmwcYrVMGWG91/view?usp=sharing
+Video demonstrating feature 1 (personalized attention, meditation test, song recommendation)  
+https://drive.google.com/file/d/1WAtuhw74RJors6wxHgsHM46X_viPlBmj/view?usp=sharing  
+Video demonstrating feature 2(podcast recommendation, online links etc.)  
+https://drive.google.com/file/d/1_Oytw2IRXSJ_2nqSOuG1VGUnbtbySOaz/view?usp=sharing  
+Video demonstrating depression Test  
+https://drive.google.com/file/d/1GoxsMVHiz2bgIxs_HZDgmwcYrVMGWG91/view?usp=sharing  
+
+PPT WITH FLOW CHART IS GIVEN HERE
+https://www.canva.com/design/DAGC9YnlASo/QWi0VxWdYJhpKrcRQUKs2w/edit?utm_content=DAGC9YnlASo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+
 
 
 Welcome to the Mental Wellness AI project! This application helps users track their emotional well-being and offers personalized support through an AI chatbot. The chatbot uses user data to provide tailored recommendations and insights to improve mental wellness.
@@ -37,6 +42,13 @@ Welcome to the Mental Wellness AI project! This application helps users track th
 
 ![Image6](https://github.com/theraghavjuneja/mental-health-tracker/blob/master/Screenshot%202024-09-21%20105756.png)
 
+
+### Screenshot of data storer , logger & LLM OPs platform
+
+![Image](https://github.com/theraghavjuneja/mental-health-tracker/blob/master/Screenshot%202024-09-21%20110905.png)
+![Image](https://github.com/theraghavjuneja/mental-health-tracker/blob/master/Screenshot%202024-09-21%20110802.png)
+![Image](https://github.com/theraghavjuneja/mental-health-tracker/blob/master/Screenshot%202024-09-21%20110851.png)
+![Image](https://github.com/theraghavjuneja/mental-health-tracker/blob/master/Screenshot%202024-09-21%20110827.png)
 ### Installation
 
 1. Clone the repository:
